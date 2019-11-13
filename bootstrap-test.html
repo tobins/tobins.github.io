@@ -31,6 +31,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="pricing.css" rel="stylesheet">
+    <script src="https://staging-api.knowledgeup.com/widget/1.0/embed.js"></script>
   </head>
   <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -52,26 +53,22 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4" style="padding: 0;">
-			<a href="http://localhost:8080/book/abcdefg" id="knowledgeup-card-with-cover">Technical Interview Practice with Daisy Ko</a>
-  			<script src="http://staging-api.knowledgeup.com/widget/1.0/abc.js?name=widget"></script>
-  			<script>
-  				widget.initialize(document.getElementById('knowledgeup-card-with-cover'), {"style":"card", "showCover":true});
-  			</script>
+			<a href="http://staging.knowledgeup.com/book/abc0001" id="knowledgeup-abc0001">Technical Interview Practice with Daisy Ko</a>
+			<script>
+				knowledgeup.initialize(document.getElementById('knowledgeup-abc0001'), {id:"abc0001",style:"card", showCover:true});
+			</script>
 		</div>		
 		<div class="col-md-4" style="padding: 0;">
-			<a href="http://localhost:8080/book/abcdefg" id="portfolio">Technical Interview Practice with Daisy Ko</a>
-			<script src="http://staging-api.knowledgeup.com/widget/1.0/abc002.js?name=portfolio"></script>
-  			<script>
-				portfolio.initialize(document.getElementById('portfolio'), {"style":"card", "showCover":true});
-  			</script>
-
+			<a href="http://staging.knowledgeup.com/book/abc0002" id="knowledgeup-abc0002">Technical Interview Practice with Daisy Ko</a>
+      <script>
+        knowledgeup.initialize(document.getElementById('knowledgeup-abc0002'), {id:"abc0002",style:"card", showCover:true});
+      </script>
 		</div>		
 		<div class="col-md-4" style="padding: 0;">
-			<a href="http://localhost:8080/book/abcdefg" id="production">Technical Interview Practice with Daisy Ko</a>
-			<script src="http://staging-api.knowledgeup.com/widget/1.0/abc001.js?name=production"></script>
-  			<script>
-  				production.initialize(document.getElementById('production'), {"style":"card", "showCover":true});
-  			</script>
+      <a href="http://staging.knowledgeup.com/book/abc0003" id="knowledgeup-abc0003">Technical Interview Practice with Daisy Ko</a>
+      <script>
+        knowledgeup.initialize(document.getElementById('knowledgeup-abc0003'), {id:"abc0003",style:"card", showCover:true});
+      </script>
 		</div>		
 	</div>
   
