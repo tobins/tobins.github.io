@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Knowledge Up · Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/pricing/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      @font-face {
+        font-family: 'Flama-Light';
+        src: url('https://staging-static.knowledgeup.com/webfont/Flama-Light.woff2') format('woff2'),
+        url('https://staging-static.knowledgeup.com/webfont/Flama-Light.woff2') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Flama-Medium';
+        src: url('https://staging-static.knowledgeup.com/webfont/Flama-Medium.woff2') format('woff2'),
+        url('https://staging-static.knowledgeup.com/webfont/Flama-Medium.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Flama-Bold';
+        src: url('https://staging-static.knowledgeup.com/webfont/Flama-Bold.woff2') format('woff2'),
+        url('https://staging-static.knowledgeup.com/webfont/Flama-Bold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Flama-Semibold';
+        src: url('https://staging-static.knowledgeup.com/webfont/Flama-Semibold.woff2') format('woff2'),
+        url('https://staging-static.knowledgeup.com/webfont/Flama-Semibold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Flama-Extrabold';
+        src: url('https://staging-static.knowledgeup.com/webfont/Flama-Extrabold.woff2') format('woff2'),
+        url('https://staging-static.knowledgeup.com/webfont/Flama-Extrabold.woff') format('woff');
+      }
+
+      body {
+        background-color: #F6F6F6;
+      }
+
+      .main {
+        background-color: #FFF;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 8px;
+        width: 1040px;
+        max-width: 1040px;
+      }
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .col {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .h2 {
+        font-family: Flama-Semibold;
+        font-size: 24px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5d5d5d;
+      }
+
+      .h3 {
+        font-family: Flama-Bold;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5d5d5d;
+      }
+
+      .h4 {
+        font-family: Flama-Medium;
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #5d5d5d;
+      }
+
+      .copy {
+        font-family: Flama-Light;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #5d5d5d;        
+      }
+      
+      ul {
+        padding: 0 2px;
+        margin-left: 1em;
+        list-style: none;
+      }
+
+      ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #5d5d5d; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */ 
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+
+      ul li {
+        font-family: Flama-Light;
+        font-size: 18px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #5d5d5d;        
+      }
+
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .mb-32 {
+        margin-bottom: 24px;
+      }
+
+      .mb-60 {
+        margin-bottom: 60px;
+      }
+
+      .link {
+        font-family: Flama-Medium;
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #4a90e2;        
+      }
+
+      .widget-container .widget {
+        float: right;
+        margin-right: -12px;
+      }
+
+      .browser-container {
+        position: relative;
+      }
+
+      .browser {
+        position: absolute;
+        top: -20px;
+        left: 0px;
+        width: 500px;
+        height: 385px;
+        background-image: url("browser.png");
+        background-repeat: no-repeat;
+      }
+
+      .browser-content {
+        position: relative;
+        width: 460px;
+        height: 345px;
+        padding: 95px 40px 0px 40px;
+      }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <script src="https://staging-api.knowledgeup.com/widget/1.0/embed.js"></script>
+  </head>
+  <body>
+    <div class="container main">
+      <div class="row mb-60">
+        <div class="col">
+          <div class="h2 mb-24">Adding a card to your website</div>
+          <p class="copy mb-24">Cards are a simple way to add details of your one-on-one session to your website.</p>
+          <div class="h3 mb-24">Customization Details</div>
+          <ul class="mb-24">
+            <li>Title</li>
+            <li>Cover image or video</li>
+            <li>Type of session</li>
+            <li>Brief description</li>
+            <li>Button label and color</li>
+            <li>Price</li>
+          </ul>
+          <a class="link" href="">Customize your card</a>
+        </div>
+        <div class="col widget-container">
+          <a href="http://staging.knowledgeup.com/book/abc0002" id="knowledgeup-card">Technical Interview Practice with Daisy Ko</a>
+          <script>
+            knowledgeup.initialize(document.getElementById('knowledgeup-card'), {id:"abc0004",style:"card", showCover:true});
+          </script>
+        </div>
+      </div>
+      <div class="row">        
+        <div class="col browser-container">
+          <div class="browser">
+            <!-- -->
+          </div>
+          <div class="browser-content">
+            <div class="h4 mb-16">Need some hands on help?</div>
+            <p class="copy mb-32">I’ve made my schedule available to those looking for a hands on one-on-one session.</p>
+            <a href="http://staging.knowledgeup.com/book/abc0002" id="knowledgeup-button">Technical Interview Practice with Daisy Ko</a>
+            <script>
+              knowledgeup.initialize(document.getElementById('knowledgeup-button'), {id:"abc0004",style:"button", showPrice:true});
+            </script>
+          </div>
+        </div>        
+        <div class="col">
+          <div class="h2 mb-24">Adding a button to your website</div>
+          <p class="copy mb-24">Using a button on your website gives you the ability to have complete control of how you present your availability to you customers.</p>
+          <div class="h3 mb-24">Customization Details</div>
+          <ul class="mb-24">
+            <li>Button label and color</li>
+            <li>Price</li>
+          </ul>
+          <a class="link" href="">Customize your button</a>
+        </div>
+      </div>      
+    </div>
+  </body>
+</html>
+
